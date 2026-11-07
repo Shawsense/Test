@@ -20,9 +20,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Set up Python #安装python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.9
+        python-version: '3.11'
     - name: Update randapi #更新api排序
       run: | 
         python updaterand.py
