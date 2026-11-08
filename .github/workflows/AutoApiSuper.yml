@@ -15,14 +15,14 @@ on:
    
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Set up Python #安装python
       uses: actions/setup-python@v5
       with:
-        python-version: 3.9
+        python-version: '3.11'
     - name: Install requests #安装requests
       run: |
         pip install requests
